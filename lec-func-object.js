@@ -176,9 +176,26 @@ var func = function(check){
 
 /*
 4a. create a function that checks if a given input is an array or an object. 
-if its an array return "array", if its an object return 'object', if its neither return undefined;
+if its an array return "array", if its an object return 'object', if its neither return 'not an aray or object';
+*/
+ 
+ 
+var func = function(check){
+	var a;
+	if(Array.isArray(check)){
+			a = 'Array';
+			console.log('This checks for Arrays:', a);
+	}else if((typeof check === 'object') && (!Array.isArray(check))){
+		a = 'Object';
+		console.log('This checks for Objects:', a);
+	}else{
+		return;
+	}
+	return a;
+}
 
 
+/*
 4b. use your object checker function to return the value if your object contains a specified key, 
 or check if the given input is an item in an array and return the index of the item. 
 
