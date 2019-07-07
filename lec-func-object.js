@@ -174,6 +174,20 @@ var func = function(check){
 
 
 
+/*
+4a. create a function that checks if a given input is an array or an object. 
+if its an array return "array", if its an object return 'object', if its neither return undefined;
+
+
+4b. use your object checker function to return the value if your object contains a specified key, 
+or check if the given input is an item in an array and return the index of the item. 
+
+hint: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf
+
+*/
+
+
+
 
 
 
