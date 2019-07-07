@@ -82,11 +82,12 @@ var objLoop = function(obj) {
 //Join:
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join
 
-
+ 
 
 var even = function (char) {
 	var char1 = char;
 	for (var i=1; i<= char1.length; i++) {
+		console.log('this is char at i:', char1[i]);
 		if(char1[i]){
 			char1 = char1.split(char1[i]).join('');
 			console.log('Characters - evenChar:', char1);
@@ -134,7 +135,7 @@ var list = function(lis){
 //if the input is an object return the value of each item in the object 
 
 //input 
-//var input = [5, 'carine', true, ['hello', 'its me'], {name: 'sunny', location: 'california'}]
+var input = [5, 'carine', true, ['hello', 'its me'], {name: 'sunny', location: 'california'}]
 
 //output
 // ['number', 'string', 'boolean', 'object', 'object']
@@ -144,7 +145,31 @@ var list = function(lis){
 
 //hint: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray
 
+/*
+i will create a function and name it func and the value i pass in it is check
+check if the input is an array or an opject.
+then i create a loop that check values in the input to see if it is an array, 
+display the type of value for each item in a new array, array1.push(types of each item)
+ if it an object display the values in the object in another array array2.push(values of object)
 
+*/
+
+var arr = [];
+var func = function(check){
+	if(Array.isArray(check)){
+		for(var i=0; i<check.length; i++){
+			console.log(check[i]);
+			arr.push(typeof check[i]);
+			console.log(typeof check[i]);
+		}
+	}else if((typeof check === 'object') && (!Array.isArray(check)) ){
+		for(var key in check){
+			console.log(key, check[key]);
+			arr.push(check[key]);
+		}
+	}
+	return arr;
+}
 
 
 
