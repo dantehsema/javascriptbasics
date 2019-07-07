@@ -78,10 +78,9 @@ var objLoop = function(obj) {
 }
 
 
-//create a function that removes every even character from a given string.
+//1. create a function that removes every even character from a given string.
 //Join:
 //https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/join
-
 
 
 
@@ -104,6 +103,9 @@ var even = function (char) {
 
 //create a function that takes an array of objects and returns a list of name from each object in the array
 
+
+//2. create a function that takes an array of objects and returns a list of name from each object in the array
+
 //input          
 nameList = [{name: 'carine', age:12}, {name: 'danteh', age: 5}]
 
@@ -125,6 +127,22 @@ var list = function(lis){
 
  return arr;
 }
+
+
+//3. Create a function that checks whether a given input is an array or an object.
+//if the input is an array return a new array that describes the type of value of each item 
+//if the input is an object return the value of each item in the object 
+
+//input 
+//var input = [5, 'carine', true, ['hello', 'its me'], {name: 'sunny', location: 'california'}]
+
+//output
+// ['number', 'string', 'boolean', 'object', 'object']
+
+//input 
+//var input2 = {name: 'aaron', age: 6, alive: true, mates: ['harry', 'sam', 'alex']}
+
+
 
 
 
