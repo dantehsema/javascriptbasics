@@ -201,7 +201,32 @@ or check if the given input is an item in an array and return the index of the i
 
 hint: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf
 
+if an input is part of a checked array, return the index of a secodn input item
+if an input is part of a checked object, return value if a key/element is entered
 */
+
+var func = function(check, item){
+	var a;
+	var input;
+	if(Array.isArray(check)){
+			a = 'Array';
+			console.log('This checks for Arrays:', a);
+			for(var i=0; i<check.length; i++){
+				if(item === check[i]){
+					input = item;
+					console.log('Here is the Index of input:', check.indexOf(check[i]));
+				}
+			}
+	}else if((typeof check === 'object') && (!Array.isArray(check))){
+		a = 'Object';
+		console.log('This checks for Objects:', a);
+		input = check[item];
+		console.log(item, check[item]);
+	}else{
+		return;
+	}
+	return input;
+}
 
 
 
