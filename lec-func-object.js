@@ -238,6 +238,29 @@ if an input is part of a checked object, return value if a key/element is entere
 // }
 
 
+var func = function(check, item){
+	var a;
+	var input;
+	if(Array.isArray(check)){
+			a = 'Array';
+			console.log('This checks for Arrays:', a);
+			for(var i=0; i<check.length; i++){
+				if(item === check[i]){
+					input = item;
+					console.log('Here is the Index of input:', check.indexOf(check[i]));
+				}
+			}
+	}else if((typeof check === 'object') && (!Array.isArray(check))){
+		a = 'Object';
+		console.log('This checks for Objects:', a);
+		input = check[item];
+		console.log(item, check[item]);
+	}else{
+		return;
+	}
+	return input;
+}
+
 
 
 /*
@@ -314,8 +337,8 @@ return win;
 /*
 5b. Write a function that determines the name of a player in a 
 of rock paper scissors
-
-input
+*/
+//input
 var player1 = {
 	name: 'carine',
 	play: 'rock'
@@ -325,13 +348,41 @@ var player2 = {
 	name:'sunny',
 	play: 'scissors'
 }
-
+/*
 displayWinner(player1, player2);
 
 output
 'carine'
 */
 
+var rockPaperScissors = function(firstPerson, SecondPerson){
+	if(player1.play === 'rock'){
+		if(player2.play === 'scissors'){
+			win = player1.name;
+		}else if(player2.play === 'paper'){
+			win = player2.name;
+		}else{
+			return 'try again';
+		}
+	}else if(player1.play === 'scissors'){
+		if(player2.play === 'paper'){
+			win = player1.name;
+		}else if(player2.play === 'rock'){
+			win = player2.name;
+		}else{
+			return 'try again';
+		}
+	}else if(player1.play === 'paper'){
+		if(player2.play === 'rock'){
+			win = player1.name;
+		}else if(player2.play === 'scissors'){
+			win = player2.name;
+		}else{
+			return 'try again';
+		}
+	}
+return win;
+}
 
 
 
@@ -368,28 +419,6 @@ output
 
 
 
-var func = function(check, item){
-	var a;
-	var input;
-	if(Array.isArray(check)){
-			a = 'Array';
-			console.log('This checks for Arrays:', a);
-			for(var i=0; i<check.length; i++){
-				if(item === check[i]){
-					input = item;
-					console.log('Here is the Index of input:', check.indexOf(check[i]));
-				}
-			}
-	}else if((typeof check === 'object') && (!Array.isArray(check))){
-		a = 'Object';
-		console.log('This checks for Objects:', a);
-		input = check[item];
-		console.log(item, check[item]);
-	}else{
-		return;
-	}
-	return input;
-}
 
 
 
