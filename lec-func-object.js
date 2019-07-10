@@ -193,6 +193,7 @@ var func = function(check){
 
 same
 if its an array return "array", if its an object return 'object', if its neither return undefined;
+<<<<<<< HEAD
 */
 /*
 var a;
@@ -209,9 +210,9 @@ var func = function(check){
 	return a;
 }
 */
+=======
 
 
-/*
 4b. use your object checker function to return the value if your object contains a specified key, 
 or check if the given input is an item in an array and return the index of the item. 
 
@@ -220,22 +221,7 @@ hint: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_O
 if an input is part of a checked array, return the index of a secodn input item
 if an input is part of a checked object, return value if a key/element is entered
 */
-// var a;
-// var func = function(check, input){
-// 	if(Array.isArray(check)){
-// 		console.log('This is an Array');
-// 		a = 'array';
-// 		for(var i=0; i<check.length; i++){
-// 			if()
-// 		}
-// 	}else if((check = typeof 'object') && (!Array.isArray(check))){
-// 		console.log('This is an Object');
-// 		a = 'object';
-// 	}else{
-// 		return;
-// 	}
-// 	return a;
-// }
+
 
 
 var func = function(check, item){
@@ -281,6 +267,7 @@ playRps('scissors', 'paper');
 
 output
 'scissors'
+<<<<<<< HEAD
 */
 
 // if a combination is ('rock', 'scissors') i want my output to be rock
@@ -335,8 +322,6 @@ return win;
 
 
 
-
-/*
 5b. Write a function that determines the name of a player in a 
 of rock paper scissors
 
@@ -389,7 +374,7 @@ return win;
 
 
 /*
-5c. Write a function that returns all possible throws a player can make 
+Write a function that returns all possible throws a player can make 
 in a 3 round game of rock paper scissors. 
 
 input
@@ -416,11 +401,8 @@ output
     ["rock", "paper", "rock", "paper", "scissors"],
              ...etc...
      ]
+
 */
-
-
-
-
 
 
 
