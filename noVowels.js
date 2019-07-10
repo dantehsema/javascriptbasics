@@ -10,10 +10,12 @@ example: input               Output
 hint: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String/length
 */ 
 
-// function noVowels(stri){
-// 	return stri.replace(/[aeiou]/gi, '')
-// }
-
 function noVowels(stri){
-	return stri - ['a'eiou']
+	return stri.replace(/[aeiou]/gi, '')
 }
+
+
+
+// var noVowels = function(stri){
+// 	for(var i=0)
+// }

@@ -194,7 +194,7 @@ var func = function(check){
 same
 if its an array return "array", if its an object return 'object', if its neither return undefined;
 */
-
+/*
 var a;
 var func = function(check){
 	if(Array.isArray(check)){
@@ -208,7 +208,7 @@ var func = function(check){
 	}
 	return a;
 }
-
+*/
 
 
 /*
@@ -263,6 +263,7 @@ var func = function(check, item){
 
 
 
+
 /*
 Rock Paper Scissors
 
@@ -281,6 +282,7 @@ playRps('scissors', 'paper');
 output
 'scissors'
 */
+
 // if a combination is ('rock', 'scissors') i want my output to be rock
 //
 
@@ -337,8 +339,8 @@ return win;
 /*
 5b. Write a function that determines the name of a player in a 
 of rock paper scissors
-*/
-//input
+
+input
 var player1 = {
 	name: 'carine',
 	play: 'rock'
@@ -348,35 +350,35 @@ var player2 = {
 	name:'sunny',
 	play: 'scissors'
 }
-/*
+
 displayWinner(player1, player2);
 
 output
 'carine'
 */
 
-var rockPaperScissors = function(firstPerson, SecondPerson){
-	if(player1.play === 'rock'){
-		if(player2.play === 'scissors'){
-			win = player1.name;
-		}else if(player2.play === 'paper'){
-			win = player2.name;
+var rockPaperScissors = function(sec, first){
+	if(sec.play === 'rock'){
+		if(first.play === 'scissors'){
+			win = sec.name;
+		}else if(first.play === 'paper'){
+			win = first.name;
 		}else{
 			return 'try again';
 		}
-	}else if(player1.play === 'scissors'){
-		if(player2.play === 'paper'){
-			win = player1.name;
-		}else if(player2.play === 'rock'){
-			win = player2.name;
+	}else if(sec.play === 'scissors'){
+		if(first.play === 'paper'){
+			win = sec.name;
+		}else if(first.play === 'rock'){
+			win = first.name;
 		}else{
 			return 'try again';
 		}
-	}else if(player1.play === 'paper'){
-		if(player2.play === 'rock'){
-			win = player1.name;
-		}else if(player2.play === 'scissors'){
-			win = player2.name;
+	}else if(sec.play === 'paper'){
+		if(first.play === 'rock'){
+			win = sec.name;
+		}else if(first.play === 'scissors'){
+			win = first.name;
 		}else{
 			return 'try again';
 		}

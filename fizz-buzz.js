@@ -45,8 +45,8 @@ function fizzBuzz (num){
 	}else if ((num%3 !== 0) && (num%5 !== 0) && (typeof num === 'number')) {
 		console.log ('flat soda')
 	}else if (typeof num === 'string'){
-		console.log ('please enter a number')
+		console.log ('please enter a number');
 	}else {
-		console.log ('Are you stupid or something, ENTER A NUMBER DUMMY')
+		console.log ('Are you stupid or something, ENTER A NUMBER DUMMY');
 	}
 }
