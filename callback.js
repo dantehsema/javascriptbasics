@@ -53,11 +53,13 @@ For each is a higher order function because it takes a callback as a parameter
 */
 var grades = [98, 71, 62, 45]
 var finalGrades = {}
-grades.forEach(function(el, i, collection) {
-	finalGrades[i+1] = el +=5;
-	finalGrades['oldGrades'] = collection
-})
-
+var getGrades = function (){
+	 grades.forEach(function(el, i, collection) {
+				finalGrades[i+1] = el +=5;
+				finalGrades['oldGrades'] = collection
+	})
+	 return finalGrades;
+}
 
 /*
 Find
@@ -71,9 +73,7 @@ someArray.find(callback(val, index, array))
 */
 
 var highGrades = grades.find(function(el, i, collection) {
-	if(collection[i] === 2) {
 		return el > 71
-	}
 })
 
 
@@ -82,8 +82,10 @@ var highGrades = grades.find(function(el, i, collection) {
 A callback is a function passed as an argument to another function.*/
 
 var moveCar = function(collection, callback) {
+	var call;
 	for (var i = 0; i < collection.length; i++) {
-		callback(collection[i]);
+		call = callback(collection[i]);
+		console.log('This is the newVal +=3:', call);
 	}
 	
 }
@@ -118,13 +120,34 @@ Hint: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_O
 
 */
 
+
 var a = [3,4,5,6,7];
-function newFunc(arr) {
-	return arr.map(function(item) {
-		return item%2
+var mod = function(arr){
+	return arr.map(function(val){
+		return val%2;
 	})
+
 }
-newFunc(a);
+
+mod(a);
+
+
+
+
+
+
+
+
+
+
+
+// var a = [3,4,5,6,7];
+// function newFunc(arr) {
+// 	return arr.map(function(item) {
+// 		return item%2
+// 	})
+// }
+// newFunc(a);
 // output: [1, 0, 1, 0, 1]
 
 
@@ -142,3 +165,42 @@ output:
 
 
 */
+
+// var a = [3,4,5,6,7];
+// a.push(10,12);
+// var even;
+// var filter = function(num){
+// 	 even = num.filter(function(i){
+// 		if(i%2===0){
+// 			return i;
+// 		}
+// 	})
+// }
+
+
+var a = [3,4,5,6,7];
+a.push(10);
+var even = function(old){
+	return old.filter(function(i){
+		console.log('This is the current array Item:', i);
+		if(i%2===0){
+			return i;
+		}
+	})
+}
+
+// var a = [3,4,5,6,7];
+// a.push(10);
+// var filter = function(a){
+//  	even = a.filter(function(i){
+// 		if(arr[i]%2 === 0){
+// 			return arr[i];
+// 		}
+// 	})
+//  } 
+//for shuffle deck math.random, math.floor
+//sum array- joins and split
+//function to add users to a user list(an array of objects)
+//if john's object add another object for trips
+// function to add and remove objects
+//
