@@ -203,4 +203,18 @@ var even = function(old){
 //function to add users to a user list(an array of objects)
 //if john's object add another object for trips
 // function to add and remove objects
-//
+
+
+/*
+var abc = [abcdefgh,i,j,k,l,m,o,p,q,r,s,t,u,v,w,x,y,z ,h,a,h,a,h,a,h, ,w,e,s,t, ,b,a,b,a, ,f,u,c,k]
+
+var alph = {a: 'a', b: 'b', c: 'c', d: 'd', e: 'e', f: 'f', g: 'g', h: 'h', 
+i: 'i', j: 'j', k: 'k', l: 'l', m: 'm', o: 'o', p: 'p', q: 'q', r: 'r', s: 's',
+ t: 't', u: 'u', v: 'v', w: 'w', x: 'x', y: 'y', z: 'z'}
+
+*/
+
+var alph ={};
+var check = function(alphabet){
+ 	if(alph[i])
+ }

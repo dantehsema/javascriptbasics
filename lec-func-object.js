@@ -210,17 +210,17 @@ var func = function(check){
 	return a;
 }
 */
-=======
+// =======
 
 
-4b. use your object checker function to return the value if your object contains a specified key, 
-or check if the given input is an item in an array and return the index of the item. 
+// 4b. use your object checker function to return the value if your object contains a specified key, 
+// or check if the given input is an item in an array and return the index of the item. 
 
-hint: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf
+// hint: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf
 
-if an input is part of a checked array, return the index of a secodn input item
-if an input is part of a checked object, return value if a key/element is entered
-*/
+// if an input is part of a checked array, return the index of a secodn input item
+// if an input is part of a checked object, return value if a key/element is entered
+// */
 
 
 
@@ -322,7 +322,7 @@ return win;
 
 
 
-5b. Write a function that determines the name of a player in a 
+/*5b. Write a function that determines the name of a player in a 
 of rock paper scissors
 
 input
@@ -342,6 +342,7 @@ output
 'carine'
 */
 
+/*
 var rockPaperScissors = function(sec, first){
 	if(sec.play === 'rock'){
 		if(first.play === 'scissors'){
@@ -403,7 +404,6 @@ output
      ]
 
 */
-
 
 
 
