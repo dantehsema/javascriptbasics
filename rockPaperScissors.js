@@ -242,11 +242,45 @@ output
 
 
 /*
-i need 3 arrays
-[rock, rock, rock]
-[scissors, scissors, scissors]
-[paper, paper, paper]
 
-recurse through each array.
-return
+rock rock rock
+rock rock paper
+rock rock scissors
+rock paper paper
+rock paper scissors
+rock paper rock
+rock scissors scissors
+rock scissors paper
+rock scissors rock
+
+
+paper paper paper
+paper paper rock
+paper paper scissors
+paper rock rock
+paper rock scissors
+paper rock paper
+paper scissors scissors
+paper scissors rock
+paper scissors paper
+
+scissors scissors scissors
+scissors scissors rock
+scissors scissors paper
+scissors rock rock
+scissors rock paper
+scissors rock scissors
+scissors paper paper
+scissors paper rock
+scissors paper scissors
+
+
+1)in the general sense we have rock paper scissors
+2)each rock, paper and scissors have 9 ways to display or throw
+3)each first throw has 3 different second throw and not exclusive to repeats
+4)each second throw has 3 different endings that is why we have 9 throws (nto exclusive to repeats)
+
+
+
+
 */
