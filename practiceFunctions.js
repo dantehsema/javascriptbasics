@@ -247,3 +247,25 @@ function func(title, author){
 }
 
 	
+
+
+
+
+
+
+
+
+function findElement(arr, func) {
+
+ for(var i=0; i<arr.length; i++){
+   var num = arr[i];
+   console.log('This is num:',num);
+   console.log('this is func at num', func(num));
+    if(func(num) == true){
+    	console.log('this is func at num', func);
+    return num;
+ 	}
+ }
+ return;
+ 
+}
